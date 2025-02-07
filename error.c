@@ -1,26 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   push_swap.h                                        :+:      :+:    :+:   */
+/*   error.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mgomes-s <mgomes-s@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/23 09:52:23 by mgomes-s          #+#    #+#             */
-/*   Updated: 2025/02/07 09:17:53 by mgomes-s         ###   ########.fr       */
+/*   Created: 2025/02/07 09:40:28 by mgomes-s          #+#    #+#             */
+/*   Updated: 2025/02/07 09:47:28 by mgomes-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PUSH_SWAP_H
-# define PUSH_SWAP_H
-
-# include <unistd.h>
-# include <stdlib.h>
-
-typedef struct  s_node
+void	error(int num)
 {
-	int				value;
-	int				index;
-	struct s_node	*next;
-};
-
-#endif
+	if (num == 1)
+		write(2, "error -> no argument passed.\n", 29);
+	if (num == 2)
+		write(2, "error ->\n", 9);
+	if (num == 3)
+		write(2, "error ->\n", 9);
+	if (num == 4)
+		write(2, "error ->\n", 9);
+}
