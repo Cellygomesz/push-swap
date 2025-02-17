@@ -6,7 +6,7 @@
 /*   By: mgomes-s <mgomes-s@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/23 09:48:42 by mgomes-s          #+#    #+#             */
-/*   Updated: 2025/02/07 13:20:06 by mgomes-s         ###   ########.fr       */
+/*   Updated: 2025/02/17 12:00:29 by mgomes-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,7 @@
 
 #include "push_swap.h"
 
-
-
+/*
 long	ft_atol(const char *nptr)
 {
 	long	i;
@@ -44,7 +43,44 @@ long	ft_atol(const char *nptr)
 	}
 	temp = temp * neg;
 	return (temp);
+}*/
+
+/*
+void	check_order(void)
+{
+	//funcao que vai verificar se os numeros estao em ordem
+
+}*/
+
+// input: 1 2 45 567 3 45 -3 6 9
+void	check_duplicate(char **av)
+{
+	//funcao que vai verificar se os numeros sao duplicados
+	int	i;
+	int	j;
+	int	neg;
+
+	i = 0;
+	j = 0;
+	while (av[i][j])
+	{
+		while (av[i][j])
+		{
+			neg = 1;
+			if (av[i][j] == '-')
+				neg *= -1;
+			if (av[i][j] >= '1' && av[i][j] <= '9')
+			j++;
+		}
+		i++;
+	}
+
 }
+/*
+void	check_num(void)
+{
+	//funcao que vai verificar se só colocaram numeros
+}*/
 
 int main(int ac, char **av)
 {
