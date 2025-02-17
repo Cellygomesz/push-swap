@@ -6,7 +6,7 @@
 /*   By: mgomes-s <mgomes-s@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/23 09:48:42 by mgomes-s          #+#    #+#             */
-/*   Updated: 2025/02/07 09:40:45 by mgomes-s         ###   ########.fr       */
+/*   Updated: 2025/02/07 13:20:06 by mgomes-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,7 @@ int main(int ac, char **av)
 	if (av[0] && !av[1])
 		error(1);
 	(void)ac;
-	(void)av;
+
 	write(1, "teste\n", 6);
 	return (0);
 }
