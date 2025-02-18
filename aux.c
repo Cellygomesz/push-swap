@@ -6,12 +6,13 @@
 /*   By: mgomes-s <mgomes-s@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/07 09:15:33 by mgomes-s          #+#    #+#             */
-/*   Updated: 2025/02/07 09:24:58 by mgomes-s         ###   ########.fr       */
+/*   Updated: 2025/02/18 15:26:10 by mgomes-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
+/*
 // aloca memória p um novo nó
 t_node	*new_node(int value)
 {
@@ -36,7 +37,7 @@ void	add_to_stack(t_node **stack, int value)
 		return ;
 	new->next = *stack;
 	*stack = new;
-}
+}*/
 
 
 
