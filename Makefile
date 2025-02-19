@@ -6,7 +6,7 @@
 #    By: mgomes-s <mgomes-s@student.42.rio>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/01/23 09:55:57 by mgomes-s          #+#    #+#              #
-#    Updated: 2025/02/18 15:12:08 by mgomes-s         ###   ########.fr        #
+#    Updated: 2025/02/19 11:09:13 by mgomes-s         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,7 @@ CC= cc
 
 CFLAGS= -Wall -Werror -Wextra -g
 
-SRC= main.c aux.c error.c check.c libft/ft_split.c
+SRC= main.c error.c check.c libft/ft_split.c
 
 OBJ= $(SRC:.c=.o)
 
