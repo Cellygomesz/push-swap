@@ -6,7 +6,7 @@
 /*   By: mgomes-s <mgomes-s@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/20 13:41:20 by mgomes-s          #+#    #+#             */
-/*   Updated: 2025/02/20 15:38:20 by mgomes-s         ###   ########.fr       */
+/*   Updated: 2025/02/21 16:41:34 by mgomes-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,10 @@ void	stack_add_back(t_stack **stack, t_stack *new)
 	if (!stack || !new)
 		return;
 	if (*stack == NULL)
+	{
 		*stack = new;
+		return ;
+	}
 	temp = *stack;
 	while (temp->next != NULL)
 		temp = temp->next;
@@ -63,4 +66,12 @@ int	stack_size(t_stack *stack)
 		size++;
 	}
 	return (size);
+}
+
+// pega o penultimo no da lista
+t_stack	*stack_before_last(t_stack *stack)
+{
+	while (stack->next->next != NULL)
+		stack = stack->next;
+	return (stack);
 }

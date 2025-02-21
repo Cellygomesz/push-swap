@@ -6,7 +6,7 @@
 /*   By: mgomes-s <mgomes-s@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/20 13:37:58 by mgomes-s          #+#    #+#             */
-/*   Updated: 2025/02/20 16:18:24 by mgomes-s         ###   ########.fr       */
+/*   Updated: 2025/02/21 16:30:39 by mgomes-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,5 +30,9 @@ void	stack_add_back(t_stack **stack, t_stack *new);
 t_stack	*stack_last(t_stack *stack);
 int	stack_size(t_stack *stack);
 void	swap(t_stack **stack);
+void	rotate(t_stack **stack);
+t_stack	*stack_before_last(t_stack *stack);
+void	reverse_rotate(t_stack **stack);
+void	push(t_stack **stack_a, t_stack **stack_b);
 
 #endif
